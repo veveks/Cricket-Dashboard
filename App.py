@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 
 # Load the CSV data
-df = pd.read_csv("F:\\dataScience\\TNCA Dashboard\\2025-04-03-17-12-05.csv", on_bad_lines='skip')
+url = "https://drive.google.com/file/d/1lH-RsHYWGEvW_JoOM0yjUJ5J6a1QDm8z/view?usp=drive_link"
+df = pd.read_csv(url, on_bad_lines='skip')
 
 # Clean data if necessary (e.g., strip whitespaces)
 df.columns = df.columns.str.strip()
